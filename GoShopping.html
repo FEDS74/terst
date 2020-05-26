@@ -1,0 +1,226 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/e581e3227e.js" crossorigin="anonymous"></script>
+  <title>Go Shopping</title>
+</head>
+
+<header class="header_container">
+
+  <nav class="nav_container">
+    <ul>
+      <li><a href="index.html" class="logo">Letha shoes for men</a></li>
+      <div class="icon_container">
+        <li class="push-right icon_cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+        <li class="push-right icon_member"><a href="#"><i class="far fa-user"></i></a></li>
+      </div>
+
+      <section class="section_container">
+        <form class="search_form">
+          <div class="search_input">
+            <input type="text" class="searchbox" placeholder="search here!" name="searchbox" value>
+            <button class="input_search_button" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+      </section>
+    </ul>
+  </nav>
+</header>
+<body class="body_stickey">
+  <div class="back_button_container">
+    <a class="back_button_rectangle" href="./index.html"><i class="fas fa-caret-left"></i> Letha me take you back</a>
+  </div>
+
+  <div class="info_banner_container">
+    <li class="banner_text">Free delivery (3 - 7 business days)</li>
+    <li class="banner_text">Free return or exchange in our stores</li>
+    <li class="banner_text">Free return on old shoes for giveaway</li>
+  </div>
+
+
+    <div class="heading_container">
+          <button onclick="showFilter()" class="dropdownbtn container_type">TYPE</button>
+          <button class="dropdownbtn container_color">COLOR</button>
+          <button class="dropdownbtn container_size">SIZE</button>
+          <button class="dropdownbtn container_price">PRICE</button>
+    </div>
+  <div class="filter_container">
+    <div class="type_container">
+
+      <div class="filter_dropdown">
+        <label class="type_shoe radio_container dropdown_filter">Casual
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="type_shoe radio_container dropdown_filter">Sneakers
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="type_shoe radio_container dropdown_filter">Dressed
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="type_shoe radio_container dropdown_filter">Business
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+      </div>
+    </div>
+    <div class="color_container">
+
+      <div class="filter_dropdown">
+        <label class="color_shoe radio_container dropdown_filter">Black
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="color_shoe radio_container dropdown_filter">White
+          <input type="checkbox">
+          <span class="bulletmark"></span></label>
+        <label class="color_shoe radio_container dropdown_filter">Blue
+          <input type="checkbox">
+          <span class="bulletmark"></span></label>
+        <label class="color_shoe radio_container dropdown_filter">Red
+          <input type="checkbox">
+          <span class="bulletmark"></span></label>
+      </div>
+    </div>
+    <div class="size_container">
+
+      <div class="filter_dropdown">
+        <label class="size_shoe radio_container dropdown_filter">40
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">40.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">41
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">41.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">42
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">42.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">43
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">43.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">44
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">44.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">45
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">45.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">46
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">46.5
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="size_shoe radio_container dropdown_filter">47
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+      </div>
+    </div>
+    <div class="price_container">
+
+      <div class="filter_dropdown">
+        <label class="price_shoe radio_container dropdown_filter">199 - 499
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="price_shoe radio_container dropdown_filter">599 - 899
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="price_shoe radio_container dropdown_filter">999 - 1299
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+        <label class="price_shoe radio_container dropdown_filter">1300 -
+          <input type="checkbox">
+          <span class="bulletmark"></span>
+        </label>
+      </div>
+    </div>
+    </div>
+
+<div class="product_container">
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+  <div class="products">
+    <img src="" alt="">
+  </div>
+</div>
+
+<footer>
+  <div class="footer_container">
+    <div class="secton_start"></div>
+    <div class="secton_middle"></div>
+    <div class="secton_end"></div>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="./javascript.js">
+</body>
+
+</html>
